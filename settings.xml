@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    
+    <mirrors>
+        <mirror>
+            <id>central</id>
+            <name>roche-plugins-releases</name>
+            <url>http://repository.intranet.roche.com/artifactory/roche-plugins-releases</url>
+            <mirrorOf>central</mirrorOf>
+        </mirror>
+        <mirror>
+            <id>snapshots</id>
+            <name>roche-plugins-releases</name>
+            <url>http://repository.intranet.roche.com/artifactory/seat-snapshot</url>
+            <mirrorOf>snapshots</mirrorOf>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile>
+            <id>artifactory</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <name>roche-plugins-releases</name>
+                    <url>http://repository.intranet.roche.com/artifactory/roche-plugins-releases</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>snapshots</id>
+                    <name>roche-plugins-snapshots</name>
+                    <url>http://repository.intranet.roche.com/artifactory/seat-snapshot</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <name>roche-plugins-releases</name>
+                    <url>http://repository.intranet.roche.com/artifactory/roche-plugins-releases</url>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+                <pluginRepository>
+                    <id>snapshots</id>
+                    <name>roche-plugins-snapshots</name>
+                    <url>http://repository.intranet.roche.com/artifactory/seat-snapshot</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
+</settings>

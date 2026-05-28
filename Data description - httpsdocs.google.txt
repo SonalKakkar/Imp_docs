@@ -1,0 +1,25 @@
+Data description - https://docs.google.com/document/d/1FY__qcialCWZZJLc_RAgUdp2JeYWHYrJ/edit
+UI related - https://docs.google.com/document/d/19PjHMHmZuCuo4zo7SFKBRERlAuYmUtcb/edit
+Standard configuration for entities - https://docs.google.com/document/d/12eS39Uz3l9Vqzj1d4tnCGEgy9FJhjNBQdLgqJOpk75k/edit?tab=t.0
+SO & PrO linking - https://docs.google.com/document/d/1noKp4tLvkQdoB1yQk5pEncXZUm-I6xOJ/edit#heading=h.gjdgxs
+Material Inventory -https://docs.google.com/document/d/1Da8ZEtDjg1cs49Wj92Nn3v2vU765Ixvw1eWIB-X7lE4/edit?tab=t.0
+Sales order change request design & Process order change request design   - https://docs.google.com/document/d/1c1i1jTO9L6cXQUEjxsEnd761e0PrafZA/edit
+
+azure devops - https://dev.azure.com/Roche-SCOT/SCOT/_testPlans/define?planId=19635&suiteId=52006
+
+https://sites.google.com/roche.com/galileo
+
+https://sites.google.com/roche.com/aistrategy/everydayai?authuser=0
+
+https://gemini.google.com/app
+
+
+always use below tags 
+
+tags:
+    - linux-amd64-l
+    - privileged
+replace the existing tags with this and retrigger the pipeline
+
+
++601123286353
